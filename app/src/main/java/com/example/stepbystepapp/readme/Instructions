@@ -7,4 +7,4 @@ The app will connect to a remote API, download some data from the API, then disp
 02. If known, add dependencies to the App level gradle file (Module: app).
     -Sync with gradle after completing this step.
 
-03.
+03. Add the Fragments to the project.

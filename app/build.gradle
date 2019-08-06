@@ -23,6 +23,8 @@ android {
     }
 }
 
+// TODO Step 01
+
 /**
  * Most all of your dependencies will be listed here.
  *
