@@ -1,0 +1,10 @@
+This project is intended to give you a script on how to build a simple app.
+
+The app will connect to a remote API, download some data from the API, then display the data in a RecyclerView.
+
+01. Create a new project.
+
+02. If known, add dependencies to the App level gradle file (Module: app).
+    -Sync with gradle after completing this step.
+
+03.

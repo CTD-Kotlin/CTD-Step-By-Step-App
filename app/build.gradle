@@ -23,7 +23,14 @@ android {
     }
 }
 
+/**
+ * Most all of your dependencies will be listed here.
+ *
+ * The version numbers may have changed since this project was made.
+ * Make any neccesary adjustments to version numbers if needed.
+ */
 dependencies {
+    // Default dependencies that were added by Android Studio
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -32,4 +39,28 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    /**
+     * Dependencies added by me/you begin here.
+     *
+     * You might not need all, or you may need more than what is listed here,
+     * depending on your project.
+     */
+
+    // Lifecycle Components
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+
+    // Navigation Library
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    implementation 'androidx.fragment:fragment:1.1.0-rc03'
+    implementation 'androidx.fragment:fragment-ktx:1.1.0-rc03'
+
+    // RetroFit 2
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
