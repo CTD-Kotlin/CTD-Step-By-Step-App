@@ -6,29 +6,29 @@ The app will connect to a remote API, download some data from the API, then disp
 in a RecyclerView.
 
 Comments are labeled according to which step in this file they occur in.  Example: Navigation
-comments will all be labeled '05' as it matches the step that it is started in, in this file.
+comments will all be labeled '04' as it matches the step that it is started in, in this file.
 
-01. Create a new project.
+00. Create a new project.
 
-02. If you know the dependencies your project will use, add them now to the App level gradle
+01. If you know the dependencies your project will use, add them now to the App level gradle
     file (Module: app).
     -Sync with gradle after completing this step.
     -This can and will likely be done at other times in future projects as well. It's just a
         good idea to plan ahead when you can.
 
-03. Add the Fragments to the project.
+02. Add the Fragments to the project.
     -Where your Kotlin files are located, right click on the package
     -Select new > Fragment > blank
     -Name your fragment and uncheck 'include factory methods' and uncheck 'interface callbacks'
     -This will create your fragment class, the associated layout(XML) file, and connect the two
     -This can be done at any time in your project, and is the same procedure for all Fragments
 
-04. Update the generated XML files for each Fragment(design your layout).
+03. Update the generated XML files for each Fragment(design your layout).
     -This is a good time to also make the XML layout file that will be used as
         a ViewHolder in the RecyclerView.  In this example, the view_holder_employee.xml
         layout is that view.
 
-05. Set up your apps navigation. (see NavInstructions.txt)
+04. Set up your apps navigation. (see NavInstructions.txt)
 
 --- Run your app.  It should load the first fragment into view, but it will not do anything yet.
 --- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS

@@ -1,7 +1,5 @@
 package com.example.stepbystepapp.fragments
 
-// TODO Step 03
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,8 +15,7 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
-        // This line is what links the XML layout to the Kotlin Fragment
+        // 02 This line is what links the XML layout to the Kotlin Fragment
         return inflater.inflate(R.layout.fragment_welcome, container, false)
     }
 
