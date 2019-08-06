@@ -8,3 +8,10 @@ The app will connect to a remote API, download some data from the API, then disp
     -Sync with gradle after completing this step.
 
 03. Add the Fragments to the project.
+    -Where your Kotlin files are located, right click on the package
+    -Select new > Fragment > blank
+    -Name your fragment and uncheck 'include factory methods' and uncheck 'interface callbacks'
+    -This will create your fragment class, the associated layout(XML) file, and connect the two
+    -This can be done at any time in your project, and is the same procedure for all Fragments
+
+04.
