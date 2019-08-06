@@ -1,5 +1,7 @@
 This project is intended to give you a script on how to build a simple app.
 
+NOTE: This is not the only way to build an app.  This is one of infinite possibilities.
+
 The app will connect to a remote API, download some data from the API, then display the data
 in a RecyclerView.
 
@@ -30,4 +32,6 @@ comments will all be labeled '05' as it matches the step that it is started in, 
 
 --- Run your app.  It should load the first fragment into view, but it will not do anything yet.
 --- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS
+
+06.
 
