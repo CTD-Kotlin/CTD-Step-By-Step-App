@@ -1,11 +1,15 @@
 This project is intended to give you a script on how to build a simple app.
 
-The app will connect to a remote API, download some data from the API, then display the data in a RecyclerView.
+The app will connect to a remote API, download some data from the API, then display the data
+in a RecyclerView.
 
 01. Create a new project.
 
-02. If known, add dependencies to the App level gradle file (Module: app).
+02. If you know the dependencies your project will use, add them now to the App level gradle
+    file (Module: app).
     -Sync with gradle after completing this step.
+    -This can and will likely be done at other times in future projects as well. It's just a
+        good idea to plan ahead when you can.
 
 03. Add the Fragments to the project.
     -Where your Kotlin files are located, right click on the package
@@ -14,4 +18,9 @@ The app will connect to a remote API, download some data from the API, then disp
     -This will create your fragment class, the associated layout(XML) file, and connect the two
     -This can be done at any time in your project, and is the same procedure for all Fragments
 
-04.
+04. Update the generated XML files for each Fragment(design your layout).
+    -This is a good time to also make the XML layout file that will be used as
+        a ViewHolder in the RecyclerView.  In this example, the view_holder_employee.xml
+        layout is that view.
+
+05.
