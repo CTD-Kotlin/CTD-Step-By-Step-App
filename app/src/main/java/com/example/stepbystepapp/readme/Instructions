@@ -3,6 +3,9 @@ This project is intended to give you a script on how to build a simple app.
 The app will connect to a remote API, download some data from the API, then display the data
 in a RecyclerView.
 
+Comments are labeled according to which step in this file they occur in.  Example: Navigation
+comments will all be labeled '05' as it matches the step that it is started in, in this file.
+
 01. Create a new project.
 
 02. If you know the dependencies your project will use, add them now to the App level gradle
@@ -23,4 +26,8 @@ in a RecyclerView.
         a ViewHolder in the RecyclerView.  In this example, the view_holder_employee.xml
         layout is that view.
 
-05.
+05. Set up your apps navigation. (see NavInstructions.txt)
+
+--- Run your app.  It should load the first fragment into view, but it will not do anything yet.
+--- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS
+

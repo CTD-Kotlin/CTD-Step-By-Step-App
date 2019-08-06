@@ -1,0 +1,27 @@
+Navigation Component Steps
+
+01. Under 'res', add a folder named navigation.
+    -The folder MUST be name 'navigation'
+    -Right-click 'res'
+    -new > android resource directory
+    -change resource type to navigation
+    -this should change the name of the folder to 'navigation'
+
+02. Add a nav graph xml to the navigation folder
+    -Right-click 'res > navigation'
+    -new > navigation resource file
+    -Mine is named nav_graph.xml
+
+03. Add your fragments to the nav_graph.xml
+    -Look for the icon that has a small green 'plus' symbol
+
+04. Connect the fragments in the nav_graph in the order you want them to move.
+
+05. Update the Activities layout to have a 'NavHostFragment'
+    -Once added, a pop up screen will show, asking you which xml to link to this NavHostFragment.
+        We only have the one option for now, so select that one.
+    -Easiest to find 'NavHostFragment' in the design mode, in the palette
+    -Search for 'NavHostFragment'
+    -Ensure that it fills the entire screen
+
+06. Wire up the Activity and the NavGraph
