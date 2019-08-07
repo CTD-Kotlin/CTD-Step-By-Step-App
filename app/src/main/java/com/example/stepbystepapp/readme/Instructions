@@ -56,7 +56,10 @@ comments will all be labeled '04' as it matches the step that it is started in, 
 -----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
 
 07. Create our API calls
+    -Add permissions to AndroidManifest.xml
     -Create our RetroFit singleton patter in RetroFitInstance
     -Create the interface and declare the API endpoints
+    -Actually make the calls in the RecyclerViewFragment and show the results
+    -More Details will be added to NetworkRequests.txt
 
 
