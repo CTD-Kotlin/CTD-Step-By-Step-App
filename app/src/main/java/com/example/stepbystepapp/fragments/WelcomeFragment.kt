@@ -23,4 +23,11 @@ class WelcomeFragment : Fragment() {
         // 02 This line is what links the XML layout to the Kotlin Fragment
         return inflater.inflate(R.layout.fragment_welcome, container, false)
     }
+
+    // 08 add final on click listener to move from welcome RecView
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        buttonAllEmployees.setOnClickListener {
+            findNavController().navigate(R.id.action_welcomeFragment_to_recyclerViewFragment)
+        }
+    }
 }

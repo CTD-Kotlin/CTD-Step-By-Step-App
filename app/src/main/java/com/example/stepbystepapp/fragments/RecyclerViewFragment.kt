@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
@@ -47,8 +48,15 @@ class RecyclerViewFragment : Fragment() {
         steps beyond 06 can be left out for now, but must be added later.
          */
         val adapter = EmployeeRecyclerViewAdapter { employee ->
+            // 08 Create the Bundle to pass the information to the next Fragment
+            val bundle = Bundle()
+            bundle.putInt(getString(R.string.EMP_ID), employee.id)
+            bundle.putInt(getString(R.string.EMP_SALARY), employee.employeeSalary)
+            bundle.putInt(getString(R.string.EMP_AGE), employee.employeeAge)
+            bundle.putString(getString(R.string.EMP_NAME), employee.profileImage)
+            // 08 pass bundle to the Fragment, through Navigation
             // 06
-            findNavController().navigate(R.id.action_recyclerViewFragment_to_detailFragment)
+            findNavController().navigate(R.id.action_recyclerViewFragment_to_detailFragment, bundle) // bundle is added in step 08.  Remove for step 06
         }
         /*
         06 Link our adapter to the RecyclerView
@@ -70,7 +78,7 @@ class RecyclerViewFragment : Fragment() {
         }
 
         // 06_2 Uncomment the next line during this step for testing the RecyclerView
-//        displayTestData(adapter)
+        // displayTestData(adapter)
 
         // 07 Comment out displayTestData() above.
         // 07 Performs our network request and displays the data.

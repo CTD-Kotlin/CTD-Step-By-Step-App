@@ -62,4 +62,13 @@ comments will all be labeled '04' as it matches the step that it is started in, 
     -Actually make the calls in the RecyclerViewFragment and show the results
     -More Details will be added to NetworkRequests.txt
 
+08. Pass the data from the RecyclerView to the Details screen
+    -In the lambda being passed to your ListAdapter, create a Bundle
+        with the variables you wish to pass.
+    -Pass the Bundle through the NavController
+    -Retrieve the Bundle in the DetailsFragments onViewCreated
+    -Change the Start Destination back to the WelcomeFragment in your
+        nav_graph.xml
+    -Add onClickListener to view Employee button
+
 

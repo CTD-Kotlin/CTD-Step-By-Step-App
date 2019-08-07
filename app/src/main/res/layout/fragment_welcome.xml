@@ -17,7 +17,7 @@
         android:background="@android:color/white"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAllNotes"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAllEmployees"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/buttonAllNotes"
+        android:id="@+id/buttonAllEmployees"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

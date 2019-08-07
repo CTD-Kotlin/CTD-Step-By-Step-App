@@ -1,0 +1,18 @@
+Network Requests
+@author Marshall Ladd
+
+Network requests are a very important part of Android development.  It allows us to store information in a
+remote location, to be accessed later through an endpoint.  This reduces the size of apps, and keeps the information
+inside of them current
+
+For this project, we will be using a library known as RetroFit2.  RetroFit2 handles asynchronous network requests
+and removes the need for us to write a lot of code.
+
+Asynchronous call are calls that happen in the background.  If you remember, we discussed how the code we have been
+writing so far has all run on the main(UI) thread.  If a network request were to happen on the main thread,
+the app would appear to freeze, as it is waiting for the download/request to finish.  This is not what we want.
+Thankfully, we don't need to think about it that much, as RetroFit will be handling that for us.
+
+RetroFit will also generate code for us, using annotations.  Annotations are lines of code marked with the '@'
+symbol.  We create an interface with functions that contain no bodies, but are marked with various annotation.  At
+compile time, RetroFit will generate code for you, based on the annotation and the function signature.
