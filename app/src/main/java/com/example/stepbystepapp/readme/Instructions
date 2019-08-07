@@ -30,8 +30,7 @@ comments will all be labeled '04' as it matches the step that it is started in, 
         layout is that view.
 
 04. Set up your apps navigation.
-    -
-    -see NavInstructions.txt for more information about how everything is linked together
+    -See NavInstructions.txt for this step
 
 --- Run your app.  It should load the first fragment into view, but it will not do anything yet.
 --- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS
@@ -40,5 +39,13 @@ comments will all be labeled '04' as it matches the step that it is started in, 
     -If you are downloading from an API, ensure your data classes match your JSON.
 
 06. Create your RecyclerView Adapter, ViewHolder, and DiffUtil
-    -see RecyclerView.txt
+    -See RecyclerView.txt for an overview of how all the components work together.
+    -See the EmployeeRecyclerViewAdapter class for description of how to implement.
+
+06_2. Use test data to make sure your RecyclerView works.
+    -In the nav_graph.xml, right-click the RecyclerViewFragment
+    -Select Set As Start Destination
+        -This will make the app open directly to the RecyclerView
+    -Add dummy data to the RecyclerViewFragment and wire up the RecyclerView to an Adapter.
+        -Details are in the RecyclerViewFragment
 
