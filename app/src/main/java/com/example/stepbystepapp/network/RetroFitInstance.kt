@@ -22,7 +22,7 @@ class RetroFitInstance {
         This is the part of the URL that never changes
         It is a constant value, and its name is in all caps to signify that.
         */
-        val BASE_URL = "http://dummy.restapiexample.com/api/v1/employees"
+        val BASE_URL = "http://dummy.restapiexample.com/"
 
         // This private variable is where the actual RetroFit is located
         // It is a singleton and its name is in all caps to signify that.
