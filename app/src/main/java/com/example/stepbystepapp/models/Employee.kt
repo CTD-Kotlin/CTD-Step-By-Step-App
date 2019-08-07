@@ -12,8 +12,9 @@ import com.google.gson.annotations.SerializedName
  * This particular project does use an endpoint for it's data.
  * Samples of the JSON are in the readme package, in the
  * SampleJson.json file.
+ *
+ * @author Marshall Ladd
  */
-
 // 05 This creates our class, and defines our constructor, all in one line
 data class Employee(
         @Expose

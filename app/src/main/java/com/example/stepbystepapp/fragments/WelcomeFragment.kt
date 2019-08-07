@@ -8,6 +8,9 @@ import android.view.ViewGroup
 
 import com.example.stepbystepapp.R
 
+/**
+ * @author Marshall Ladd
+ */
 class WelcomeFragment : Fragment() {
 
     override fun onCreateView(

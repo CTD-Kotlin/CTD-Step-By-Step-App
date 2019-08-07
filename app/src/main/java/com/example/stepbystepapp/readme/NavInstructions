@@ -1,4 +1,5 @@
 Navigation Component Steps
+@author Marshall Ladd
 
 01. Under 'res', add a folder named navigation.
     -The folder MUST be name 'navigation'

@@ -9,6 +9,9 @@ import android.view.ViewGroup
 
 import com.example.stepbystepapp.R
 
+/**
+ * @author Marshall Ladd
+ */
 class RecyclerViewFragment : Fragment() {
 
     override fun onCreateView(

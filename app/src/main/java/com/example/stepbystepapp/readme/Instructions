@@ -1,4 +1,5 @@
 This project is intended to give you a script on how to build a simple app.
+@author Marshall Ladd
 
 NOTE: This is not the only way to build an app.  This is one of infinite possibilities.
 
@@ -28,11 +29,16 @@ comments will all be labeled '04' as it matches the step that it is started in, 
         a ViewHolder in the RecyclerView.  In this example, the view_holder_employee.xml
         layout is that view.
 
-04. Set up your apps navigation. (see NavInstructions.txt)
+04. Set up your apps navigation.
+    -
+    -see NavInstructions.txt for more information about how everything is linked together
 
 --- Run your app.  It should load the first fragment into view, but it will not do anything yet.
 --- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS
 
 05. Create your data classes.
     -If you are downloading from an API, ensure your data classes match your JSON.
+
+06. Create your RecyclerView Adapter, ViewHolder, and DiffUtil
+    -see RecyclerView.txt
 

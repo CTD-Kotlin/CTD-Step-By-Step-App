@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="4dp"
     android:layout_margin="4dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="4dp">
 
     <TextView
-        android:id="@+id/textViewEmployeeName"
+        android:id="@+id/textViewVHEmployeeName"
         style="@style/TextAppearance.AppCompat.Display1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

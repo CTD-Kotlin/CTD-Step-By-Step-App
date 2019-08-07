@@ -1,6 +1,7 @@
 // Sample of the JSON response from the endpoint
 // This JSON is a list of two Employee Objects,
 // with five total parameters in each.
+// @author Marshall Ladd
 
 [
   {
