@@ -30,7 +30,7 @@ comments will all be labeled '04' as it matches the step that it is started in, 
         layout is that view.
 
 04. Set up your apps navigation.
-    -See NavInstructions.txt for this step
+    -See Navigation.txt for this step
 
 -----> Run your app.  It should load the first fragment into view, but it will not do anything yet. <-----
 -----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
@@ -41,7 +41,7 @@ comments will all be labeled '04' as it matches the step that it is started in, 
 06. Create your RecyclerView Adapter, ViewHolder, and DiffUtil
     -See RecyclerView.txt for an overview of how all the components work together.
     -See the EmployeeRecyclerViewAdapter class for description of how to implement.
-    -Wire up the RecyclerView in the Fragment.
+    -After completing the above step, wire up the RecyclerView in the Fragment.
         -Details are in the RecyclerViewFragment
 
 06_2. Use test data to make sure your RecyclerView works.
@@ -55,6 +55,7 @@ comments will all be labeled '04' as it matches the step that it is started in, 
 -----> Clicking on an item in the RecyclerView should send you to the details screen, but not show any. <-----
 -----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
 
-
+07. Create our API calls
+    -Create our RetroFit singleton patter in RetroFitInstance
 
 
