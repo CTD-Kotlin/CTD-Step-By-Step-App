@@ -33,5 +33,6 @@ comments will all be labeled '04' as it matches the step that it is started in, 
 --- Run your app.  It should load the first fragment into view, but it will not do anything yet.
 --- DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS
 
-06.
+05. Create your data classes.
+    -If you are downloading from an API, ensure your data classes match your JSON.
 
