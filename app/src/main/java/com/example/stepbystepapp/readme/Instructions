@@ -41,15 +41,17 @@ comments will all be labeled '04' as it matches the step that it is started in, 
 06. Create your RecyclerView Adapter, ViewHolder, and DiffUtil
     -See RecyclerView.txt for an overview of how all the components work together.
     -See the EmployeeRecyclerViewAdapter class for description of how to implement.
+    -Wire up the RecyclerView in the Fragment.
+        -Details are in the RecyclerViewFragment
 
 06_2. Use test data to make sure your RecyclerView works.
     -In the nav_graph.xml, right-click the RecyclerViewFragment
     -Select Set As Start Destination
         -This will make the app open directly to the RecyclerView
-    -Add dummy data to the RecyclerViewFragment and wire up the RecyclerView to an Adapter.
+    -Add dummy data to the RecyclerViewFragment
         -Details are in the RecyclerViewFragment
 
------> Run your app.  It should load the RecyclerViewFragment into view, and display our dummy data. <-----
+-----> Run your app.  It should load the RecyclerViewFragment into view, and display the test data. <-----
 -----> Clicking on an item in the RecyclerView should send you to the details screen, but not show any. <-----
 -----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
 

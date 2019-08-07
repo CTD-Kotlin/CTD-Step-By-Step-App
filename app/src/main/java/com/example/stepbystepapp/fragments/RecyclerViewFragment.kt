@@ -28,29 +28,32 @@ class RecyclerViewFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_recycler_view, container, false)
     }
 
-    // 06_2
+    // 06
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         /*
-        06_2 Create a ListAdapter for the RecyclerView, passing it a lambda function
+        06 Create a ListAdapter for the RecyclerView, passing it a lambda function
         that takes an employee as an argument. At this stage, we do nothing with employee.
         The lambda's current function is to move us to the next screen
 
         NOTE: This section of code will change again in a future step. Lines marked with
-        steps beyond 06_2 can be left out for now, but must be added later.
+        steps beyond 06 can be left out for now, but must be added later.
          */
         val adapter = EmployeeRecyclerViewAdapter { employee ->
-            // 06_2
+            // 06
             findNavController().navigate(R.id.action_recyclerViewFragment_to_detailFragment)
         }
         /*
-        06_2 Link our adapter to the RecyclerView
+        06 Link our adapter to the RecyclerView
+
+        recyclerView is the id of the RecyclerView in our XML file.  We get access to it
+        using Kotlin synthetics.
          */
         recyclerView.apply {
             this.adapter = adapter
-            // 06_2 A Fragment's Context is nullable.  This checks if it is or not.
+            // 06 A Fragment's Context is nullable.  This checks if it is or not.
             context?.let {
                 /*
-                06_2 A RecyclerView requires a LayoutManager. A LinearLayoutManager gives
+                06 A RecyclerView requires a LayoutManager. A LinearLayoutManager gives
                 us vertical scrolling rows. There are LayoutManagers for creating grids and
                 going horizontal as well. All require a Context Object, represented by 'it'.
                  */
@@ -76,6 +79,4 @@ class RecyclerViewFragment : Fragment() {
                 Employee(3, "test3", 85000, 32, ""))
         adapter.submitList(testData)
     }
-
-
 }
