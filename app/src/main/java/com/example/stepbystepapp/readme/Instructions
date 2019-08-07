@@ -1,0 +1,74 @@
+This project is intended to give you a script on how to build a simple app.
+@author Marshall Ladd
+
+NOTE: This is not the only way to build an app.  This is one of infinite possibilities.
+
+The app will connect to a remote API, download some data from the API, then display the data
+in a RecyclerView.
+
+Comments are labeled according to which step in this file they occur in.  Example: Navigation
+comments will all be labeled '04' as it matches the step that it is started in, in this file.
+
+00. Create a new project.
+
+01. If you know the dependencies your project will use, add them now to the App level gradle
+    file (Module: app).
+    -Sync with gradle after completing this step.
+    -This can and will likely be done at other times in future projects as well. It's just a
+        good idea to plan ahead when you can.
+
+02. Add the Fragments to the project.
+    -Where your Kotlin files are located, right click on the package
+    -Select new > Fragment > blank
+    -Name your fragment and uncheck 'include factory methods' and uncheck 'interface callbacks'
+    -This will create your fragment class, the associated layout(XML) file, and connect the two
+    -This can be done at any time in your project, and is the same procedure for all Fragments
+
+03. Update the generated XML files for each Fragment(design your layout).
+    -This is a good time to also make the XML layout file that will be used as
+        a ViewHolder in the RecyclerView.  In this example, the view_holder_employee.xml
+        layout is that view.
+
+04. Set up your apps navigation.
+    -See Navigation.txt for this step
+
+-----> Run your app.  It should load the first fragment into view, but it will not do anything yet. <-----
+-----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
+
+05. Create your data classes.
+    -If you are downloading from an API, ensure your data classes match your JSON.
+
+06. Create your RecyclerView Adapter, ViewHolder, and DiffUtil
+    -See RecyclerView.txt for an overview of how all the components work together.
+    -See the EmployeeRecyclerViewAdapter class for description of how to implement.
+    -After completing the above step, wire up the RecyclerView in the Fragment.
+        -Details are in the RecyclerViewFragment
+
+06_2. Use test data to make sure your RecyclerView works.
+    -In the nav_graph.xml, right-click the RecyclerViewFragment
+    -Select Set As Start Destination
+        -This will make the app open directly to the RecyclerView
+    -Add dummy data to the RecyclerViewFragment
+        -Details are in the RecyclerViewFragment
+
+-----> Run your app.  It should load the RecyclerViewFragment into view, and display the test data. <-----
+-----> Clicking on an item in the RecyclerView should send you to the details screen, but not show any. <-----
+-----> DO NOT MOVE FORWARD UNTIL ALL PRIOR STEPS ARE COMPLETED AND THE APP RUNS <-----
+
+07. Create our API calls
+    -Add permissions to AndroidManifest.xml
+    -Create our RetroFit singleton patter in RetroFitInstance
+    -Create the interface and declare the API endpoints
+    -Actually make the calls in the RecyclerViewFragment and show the results
+    -More Details will be added to NetworkRequests.txt
+
+08. Pass the data from the RecyclerView to the Details screen
+    -In the lambda being passed to your ListAdapter, create a Bundle
+        with the variables you wish to pass.
+    -Pass the Bundle through the NavController
+    -Retrieve the Bundle in the DetailsFragments onViewCreated
+    -Change the Start Destination back to the WelcomeFragment in your
+        nav_graph.xml
+    -Add onClickListener to view Employee button
+
+

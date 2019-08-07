@@ -1,0 +1,21 @@
+// Sample of the JSON response from the endpoint
+// This JSON is a list of two Employee Objects,
+// with five total parameters in each.
+// @author Marshall Ladd
+
+[
+  {
+    "id": "15775",
+    "employee_name": "new name",
+    "employee_salary": "12",
+    "employee_age": "151",
+    "profile_image": ""
+  },
+  {
+    "id": "15776",
+    "employee_name": "56559",
+    "employee_salary": "11",
+    "employee_age": "197",
+    "profile_image": ""
+  }
+]

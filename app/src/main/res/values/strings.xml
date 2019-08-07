@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Step By Step App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="EMP_ID">ID</string>
+    <string name="EMP_NAME">name</string>
+    <string name="EMP_SALARY">salary</string>
+    <string name="EMP_AGE">age</string>
+    <string name="EMP_IMAGE">image</string>
+</resources>

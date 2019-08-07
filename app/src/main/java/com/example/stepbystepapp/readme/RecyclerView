@@ -1,0 +1,16 @@
+RecyclerView Pattern
+@author Marshall Ladd
+
+RecyclerView is an advanced ListView that is more memory efficient, and provide convenient
+helper methods that a standard ListView does not have.
+
+The RecyclerView requires 4 pieces, working together to display data to the screen in a list.
+- A List of data
+- A ListAdapter
+- A ViewHolder
+- An XML layout
+
+The ListAdapter is responsible for linking an XML file to a ViewHolder (this is called inflating).
+This happens in the overridden onCreateViewHolder function.  The ListAdapter then connects, or
+binds an Object from the list of data to the newly created ViewHolder, which can then be added
+to the RecyclerView and shown on the screen.
